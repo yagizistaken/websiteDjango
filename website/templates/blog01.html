@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{% static 'ico/favicon.png' %}">
+
+    <title>Yağız Ateşok BlogPost 1 </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Static navbar -->
+<div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'index' %}">STANLEY</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{% url 'work' %}">Work</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<!-- +++++ Post +++++ -->
+<div id="white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                    <p><img src="{% static 'img/user.jpg' %}" width="50px" height="50px"> <ba>Yağız Ateşok</ba></p>
+                <p><bd>January 3, 2014</bd></p>
+                <h4>An Image Post</h4>
+                <p><img class="img-responsive" src="{% static 'img/blog01.jpg' %}" alt=""></p>
+                <p>In the journey of life, obstacles often test our resolve and push us to our limits. Yet, it is during these trying times that our true character shines through. We dig deep into our reservoirs of courage and conviction, refusing to be swayed by doubt or fear. With each passing challenge, we emerge more resilient, more determined than ever to chase our dreams and achieve our goals. .</p>
+                <p>The path to success is rarely smooth, lined with twists, turns, and unexpected detours. But with the steadfast belief in ourselves and our abilities, we press on, knowing that every setback is merely a temporary setback. Each failure is not a defeat but a valuable lesson in disguise, guiding us closer to our ultimate destination.</p>
+                <p>So, as we navigate the ups and downs of life, let us hold onto the mantra 'Never Give Up' as a beacon of hope and inspiration. Let it fuel our passion, drive our ambition, and propel us forward towards a future filled with endless possibilities. For in the face of adversity, it is not the strongest or the fastest who prevail, but those who refuse to surrender to defeat. Let us be among those who rise above, persevering with unwavering determination until we reach the pinnacle of success.</p>
+                <br>
+                <p><bt>TAGS: <a href="#">Wordpress</a> - <a href="#">Web Design</a></bt></p>
+                <hr>
+                <p><a href="{% url 'blog' %}"># Back</a></p>
+            </div>
+
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /white -->
+
+
+<!-- +++++ Footer Section +++++ -->
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>My Bunker</h4>
+                <p>
+                    Yağız Ateşok,<br/>
+                    +905455706010, <br/>
+                    Türkiye, İstanbul.
+                </p>
+            </div><!-- /col-lg-4 -->
+
+            <div class="col-lg-4">
+                <h4>My Links</h4>
+                <p>
+                    <a href="#">Dribbble</a><br/>
+                    <a href="#">Twitter</a><br/>
+                    <a href="#">Facebook</a>
+                </p>
+            </div><!-- /col-lg-4 -->
+
+            <div class="col-lg-4">
+                <h4>About Yağız</h4>
+                <p>This cute theme was created to showcase your work in a simple way. Use it wisely.</p>
+            </div><!-- /col-lg-4 -->
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{% static 'favicon.png' %}">
+
+    <title>Yağız Ateşok - About</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Static navbar -->
+<div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'index' %}">Yağız Ateşok</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{% url 'work' %}">Work</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<!-- +++++ Welcome Section +++++ -->
+<div id="ww">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 centered">
+                <img src="{% static 'img/user.jpg' %}" alt="Stanley">
+                <h1>About Yagiz!</h1>
+                <p>Hello everybody. I'm Yağız, I'm passionate about software development and enjoy keeping up with the latest trends in the tech world. Writing code, solving problems, and creating new projects excite me.</p>
+            </div><!-- /col-lg-8 -->
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /ww -->
+
+<!-- +++++ Information Section +++++ -->
+
+<div class="container pt">
+    <div class="row mt centered">
+        <div class="col-lg-3">
+            <span class="glyphicon glyphicon-book"></span>
+            <p>Language Skills: English (Advanced reading, speaking and writing) </p>
+        </div>
+
+        <div class="col-lg-3">
+            <span class="glyphicon glyphicon-user"></span>
+            <p>Painting, cooking, playing tennis, guitar, travelling, reading, dancing, playing chess.</p>
+        </div>
+
+        <div class="col-lg-3">
+            <span class="glyphicon glyphicon-fire"></span>
+            <p>Date of birth & Place: 13/12/2001 Istanbul // Driver's license: B Type </p>
+        </div>
+
+        <div class="col-lg-3">
+            <span class="glyphicon glyphicon-globe"></span>
+            <p>EDUCATION 2020-Present ''Piri Reis University, Information System Engineering </p>
+        </div>
+    </div><!-- /row -->
+
+    <div class="row mt">
+        <div class="col-lg-6">
+            <h4>Who is Yağız?</h4>
+            <p>Yağız Ateşok was born in 2001. He attended Habire Yahşi Anatolian High School for his secondary education. In 2020, he realized his dream of studying Computer Engineering and enrolled at Piri Reis University. Throughout his university years, he worked at three different jobs, including internships at BTC Information Services Co. and as a Sales Assistant at Tunga Tour Tourism Agency. In 2024, Yağız Ateşok successfully completed his degree and graduated from university. He then began preparing for a master's degree in Germany to pursue his dream. To be continued...</p>
+        </div><!-- /colg-lg-6 -->
+
+        <div class="col-lg-6">
+            <h4>THE SKILLS</h4>
+            Office Programs
+            <div class="progress">
+                <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 35%;">
+                    <span class="sr-only">60% Complete</span>
+                </div>
+            </div>
+
+            Python
+            <div class="progress">
+                <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                    <span class="sr-only">80% Complete</span>
+                </div>
+            </div>
+
+            HTML + CSS
+            <div class="progress">
+                <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                    <span class="sr-only">95% Complete</span>
+                </div>
+            </div>
+
+        </div><!-- /col-lg-6 -->
+    </div><!-- /row -->
+</div><!-- /container -->
+
+
+<!-- +++++ Footer Section +++++ -->
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>My Bunker</h4>
+                    <p>
+                        Yağız Ateşok,<br/>
+                        +905455706010, <br/>
+                        Türkiye, İstanbul.
+                    </p>
+            </div><!-- /col-lg-4 -->
+
+            <div class="col-lg-4">
+                <h4>My Links</h4>
+                <p>
+                    <a href="#">Linkedin</a><br/>
+                    <a href="#">Twitter</a><br/>
+                    <a href="#">Facebook</a>
+                </p>
+            </div><!-- /col-lg-4 -->
+
+            <div class="col-lg-4">
+                <h4>About Yağız</h4>
+                <p>Unleash the power of code with this captivating theme. Let your software solutions shine brightly, illuminating the digital landscape with innovation and creativity</p>
+            </div><!-- /col-lg-4 -->
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>

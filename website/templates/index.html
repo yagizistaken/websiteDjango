@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
+
+    <title>Yağız Ateşok CV Website </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet"> <!-- Bootstrap CSS -->
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet"> <!-- Ana CSS dosyası -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- Static navbar -->
+<div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'index' %}">YAĞIZ ATEŞOK</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{% url 'work' %}">Work</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<!-- +++++ Welcome Section +++++ -->
+<div id="ww">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 centered">
+                <img src="{% static 'img/user.jpg' %}" alt="Stanley">
+                <h1>Hi, This is Yağız!</h1>
+                <p>Hello everybody. I'm Yağız, I'm passionate about software development and enjoy keeping up with the latest trends in the tech world. Writing code, solving problems, and creating new projects excite me.</p>
+
+            </div><!-- /col-lg-8 -->
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /ww -->
+
+<!-- +++++ Projects Section +++++ -->
+<div class="container pt">
+    <div class="row mt centered">
+        <div class="col-lg-4">
+            <a class="zoom green" href="{% url 'work_detail' %}"><img class="img-responsive" src="{% static 'img/portfolio/1.jpg' %}" alt="" /></a>
+            <p>Software Engineering</p>
+        </div>
+        <div class="col-lg-4">
+            <a class="zoom green" href="{% url 'work_detail' %}"><img class="img-responsive" src="{% static 'img/portfolio/2.jpg' %}" alt="" /></a>
+            <p>Tourism</p>
+        </div>
+        <div class="col-lg-4">
+            <a class="zoom green" href="{% url 'work_detail' %}"><img class="img-responsive" src="{% static 'img/portfolio/3.jpg' %}" alt="" /></a>
+            <p>E-Sports</p>
+        </div>
+    </div><!-- /row -->
+    <div class="row mt centered">
+        <div class="col-lg-4">
+            <a class="zoom green" href="{% url 'work_detail' %}"><img class="img-responsive" src="{% static 'img/portfolio/port01.jpg' %}" alt="" /></a>
+            <p>Software Engineering</p>
+        </div>
+        <div class="col-lg-4">
+            <a class="zoom green" href="{% url 'work_detail' %}"><img class="img-responsive" src="{% static 'img/portfolio/port02.jpg' %}" alt="" /></a>
+            <p>Tourism</p>
+        </div>
+        <div class="col-lg-4">
+            <a class="zoom green" href="{% url 'work_detail' %}"><img class="img-responsive" src="{% static 'img/portfolio/port03.jpg' %}" alt="" /></a>
+            <p>E-Sports</p>
+        </div>
+    </div><!-- /row -->
+</div><!-- /container -->
+
+<!-- +++++ Footer Section +++++ -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>My Bunker</h4>
+                <p>
+                    Yağız Ateşok,<br/>
+                    +905455706010 <br/>
+                    Türkiye, İstanbul.
+                </p>
+            </div><!-- /col-lg-4 -->
+
+            <div class="col-lg-4">
+                <h4>My Links</h4>
+                <p>
+                    <a href="#">Dribbble</a><br/>
+                    <a href="#">Twitter</a><br/>
+                    <a href="#">Facebook</a>
+                </p>
+            </div><!-- /col-lg-4 -->
+
+            <div class="col-lg-4">
+                <h4>About Yağız</h4>
+                <p>Unleash the power of code with this captivating theme. Let your software solutions shine brightly, illuminating the digital landscape with innovation and creativity</p>
+            </div><!-- /col-lg-4 -->
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
+<script src="{% static 'js/hover.zoom.js' %}"></script>
+<script src="{% static 'js/hover.zoom.conf.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
